@@ -1,0 +1,37 @@
+# Created with YamlCreate.ps1 Dumplings Mod
+# yaml-language-server: $schema=https://aka.ms/winget-manifest.installer.1.10.0.schema.json
+
+PackageIdentifier: TheDocumentFoundation.LibreOffice.PreRelease.SDK
+PackageVersion: 26.2.0.0.beta1
+InstallerType: msi
+Scope: machine
+InstallerSwitches:
+  InstallLocation: INSTALLLOCATION="<INSTALLPATH>"
+UpgradeBehavior: install
+Dependencies:
+  PackageDependencies:
+  - PackageIdentifier: TheDocumentFoundation.LibreOffice.PreRelease
+Installers:
+- Architecture: x86
+  InstallerUrl: https://downloadarchive.documentfoundation.org/libreoffice/old/26.2.0.0.beta1/win/x86/LibreOfficeDev_26.2.0.0.beta1_Win_x86_sdk.msi
+  InstallerSha256: BC28386CB9CEF38A0069C4870CC112F589710DD795C379BEAD0BD6884512820C
+  ProductCode: '{600A8435-E095-41F7-88E3-26B683E2A484}'
+  AppsAndFeaturesEntries:
+  - ProductCode: '{600A8435-E095-41F7-88E3-26B683E2A484}'
+    UpgradeCode: '{EFD2F52B-6C0E-4F84-9E95-79C5F69DF479}'
+- Architecture: x64
+  InstallerUrl: https://downloadarchive.documentfoundation.org/libreoffice/old/26.2.0.0.beta1/win/x86_64/LibreOfficeDev_26.2.0.0.beta1_Win_x86-64_sdk.msi
+  InstallerSha256: 061D733AB36210F2F1DF93DBF5D3BCC8F02A195BA181A63E8CAD81C065449C4A
+  ProductCode: '{9CF8362D-A36D-4AAD-954A-785B8B3606C7}'
+  AppsAndFeaturesEntries:
+  - ProductCode: '{9CF8362D-A36D-4AAD-954A-785B8B3606C7}'
+    UpgradeCode: '{EFD2F52B-6C0E-4F84-9E95-79C5F69DF479}'
+- Architecture: arm64
+  InstallerUrl: https://downloadarchive.documentfoundation.org/libreoffice/old/26.2.0.0.beta1/win/aarch64/LibreOfficeDev_26.2.0.0.beta1_Win_aarch64_sdk.msi
+  InstallerSha256: 61CA7FCBB49C44FDDD322934E3DDF08E249B1FB9EC3A611774FB535291AB1A39
+  ProductCode: '{5B95B6A2-1654-48EC-BCC4-8BC087BE30DD}'
+  AppsAndFeaturesEntries:
+  - ProductCode: '{5B95B6A2-1654-48EC-BCC4-8BC087BE30DD}'
+    UpgradeCode: '{EFD2F52B-6C0E-4F84-9E95-79C5F69DF479}'
+ManifestType: installer
+ManifestVersion: 1.10.0
